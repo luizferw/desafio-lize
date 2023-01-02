@@ -1,9 +1,9 @@
-# default
+
+https://blog-lize.netlify.app/
 
 ## Project setup
 
 ```
-
 # npm
 npm install
 
@@ -12,14 +12,5 @@ npm install
 ```
 # npm
 npm run dev
-
-```
-
-### Compiles and minifies for production
-
-```
-
-# npm
-npm run build
 
 ```
