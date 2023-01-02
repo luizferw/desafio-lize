@@ -3,15 +3,17 @@
     <v-main>
       <v-container class="fill-height">
         <v-btn
+          data-test="addPostButton"
           icon="mdi-plus"
           color="primary"
           class="mb-4"
           size="large"
-          @click="addPost()"
+          @click="addPost"
         />
         <v-text-field
           label="Search"
           v-model.trim="search"
+          data-test="search"
         />
         <v-row>
           <template
@@ -25,6 +27,7 @@
               cols="12"
             >
               <Post
+                data-test="post"
                 :content="post"
                 @editPost="editPost"
                 @deletePost="deletePost"

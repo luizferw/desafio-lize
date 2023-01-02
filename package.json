@@ -2,9 +2,10 @@
   "name": "desafio-lize",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "dev": "vite",
+    "preview": "vite preview",
+    "cypress:e2e": "cypress open"
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
@@ -13,6 +14,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
+    "@vue/test-utils": "^2.2.6",
+    "cypress": "^12.2.0",
     "vite": "^3.1.9",
     "vite-plugin-vuetify": "^1.0.0-alpha.12"
   }

@@ -13,6 +13,7 @@
         size="small"
         prepend-icon="mdi-pencil"
         @click="editPost"
+        data-test="editPostButton"
       >
         Edit
       </v-btn>
@@ -21,6 +22,7 @@
         prepend-icon="mdi-delete"
         @click="deletePost"
         color="error"
+        data-test="deletePostButton"
       >
         Delete
       </v-btn>
@@ -36,7 +38,7 @@ export default {
   computed: {
     cutContent () {
       const content = this.content.description
-      return content.length >= 175 ? content.substring(0, 160) + '...' : content
+      return content.length >= 160 ? content.substring(0, 160) + '...' : content
     }
   },
   methods: {

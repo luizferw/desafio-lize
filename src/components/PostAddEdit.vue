@@ -30,11 +30,10 @@
               >
                 <v-text-field
                   label="Image URL"
-                  counter="150"
                   :rules="[
                     rules.required,
-                    rules.minLength(20),
-                    rules.maxLength(250),
+                    rules.minLength(25),
+                    rules.maxLength(1000),
                     rules.validImage
                   ]"
                   v-model.trim="model.imgUrl"
@@ -56,13 +55,13 @@
           <v-card-actions>
             <v-spacer></v-spacer>
             <v-btn
-              @click="closeModal()"
+              @click="closeModal"
               size="large"
             >
               Close
             </v-btn>
             <v-btn
-              @click="savePost()"
+              @click="savePost"
               size="large"
               color="primary"
             >
