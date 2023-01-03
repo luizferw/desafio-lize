@@ -6,9 +6,9 @@ https://blog-lize.netlify.app/
 ```
 # npm
 npm install
+```
 
 ```
 # npm
 npm run dev
-
 ```
